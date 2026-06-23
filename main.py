@@ -1,3 +1,5 @@
+
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from database import SessionLocal
 from database_models import Product
@@ -5,6 +7,13 @@ from fastapi import Query
 from datetime import datetime
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():
