@@ -37,3 +37,12 @@ A simple React frontend was built to consume the FastAPI backend and display pro
 - Product listing
 - API integration
 - React-based UI
+
+
+## Improvements:
+- Composite cursor (created_at + id)
+- Automated tests
+- Caching
+
+## AI Usage:
+Used ChatGPT to assist with FastAPI structure, deployment, and pagination concepts. Final implementation was tested and understood before submission.
