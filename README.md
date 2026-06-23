@@ -28,3 +28,12 @@ GET /products
 GET /products?category=Electronics
 
 GET /products?cursor=<timestamp>
+
+## Bonus Frontend
+
+A simple React frontend was built to consume the FastAPI backend and display products from the API.
+
+## Frontend Features:
+- Product listing
+- API integration
+- React-based UI
